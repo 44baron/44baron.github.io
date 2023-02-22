@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1e2126;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-track {
+    background: #424242;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #666;
+}
+#par1, #par2, #par3, #par4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+.block{
+    background-color: #1e2126;
+}
+p{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    padding: 0 50px 50px 50px;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+h2, p{
+    color: white;
+    
+    
+}
+#muzyka{
+    min-height: 100px;
+}
+#par1{
+    background-image: url('../img/cassette-tape.jpg');
+    background-attachment: fixed;
+}
+#par2{
+    background-image: url("../img/kaliber3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#par3{
+    background-image: url("../img/kaliber1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#par4{
+    background-image: url("../img/kaliber6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#navbar {
+    padding-top: 30px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+#navbar, h1, h2, h3, h4, h5, h6{
+    font-family: 'Fredericka the Great', cursive;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.bgSticky{
+    background: #2f3237;
+}
+#background{
+    background: url("../img/gwiazdy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: all 1s ease-in-out;
+}
+ul li a:hover{
+    font-size: 40px;
+    background: rgb(197,182,149);
+    background: linear-gradient(90deg, rgba(197,182,149,1) 12%, rgba(110,67,66,1) 88%);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    width: 100%;
+    line-height: 10px;
+    background-color: #1e2126;
+    display: table;
+    padding-bottom: 30px;
+}
+.filar{
+    width: 24%;
+    float: left;
+    border-right: #aaa 7px solid;
+    border-left: #aaa 7px solid;
+    transition: .2s all ease-in-out;
+    
+}
+.filar:hover{
+    border-color: #ddd;
+}
+.filar:first-child{
+    border-left: none;
+}
+.filar:last-child{
+    border-right: none;
+}
+.filar:last-child:hover .filar:first-child{
+    border-color: #ddd;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+#a{
+    background: rgb(197,182,149);
+    background: linear-gradient(90deg, rgba(197,182,149,1) 12%, rgba(110,67,66,1) 88%);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#b{
+    background: rgb(253,253,253);
+    background: linear-gradient(90deg, rgba(253,253,253,1) 13%, rgba(43,42,40,1) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#c{
+    background: rgb(145,84,82);
+    background: linear-gradient(90deg, rgba(145,84,82,1) 0%, rgba(87,73,96,1) 50%, rgba(202,199,188,1) 93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#d{
+    background: rgb(29,30,51);
+    background: linear-gradient(90deg, rgba(29,30,51,1) 17%, rgba(170,95,151,1) 81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.filar p{
+    line-height: 100px;
+    font-size: 1.5em;
+}
+.frames{
+    width: 100%;
+    float: left;
+    
+}
+.frames iframe{
+    width: 80%;
+    margin-left: 40px;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotts{
+    color: #f2f2f2;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#first{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#first p{
+    padding: 0;
+    line-height: 100px;
+    box-shadow: 0px 0px 70px 0px rgba(170,170,170,1);
+}
+.icon{
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+}
+.icon a img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;/* jak te 2 gowno zmienisz na paddingi to beda 2 jebne kreski */
+    box-shadow: #aaa 0px 0px 20px;
+    border-radius: 50%;
+}
+.icon a img:hover{
+    box-shadow: #aaa 0px 0px 40px;
+}
+
+
+/* albumy */
+#box{
+    
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    display: grid;
+    
+    grid-row-gap: 24px;
+}
+#box .rectangle{
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 170px;
+    
+    
+}
+#box .rectangle img{
+    width: 170px;
+    height: 170px;
+    vertical-align: top;
+    float: left;
+    display: block;
+    overflow: hidden;
+    filter: blur(5px);
+    transition: all .5s ease-in-out;
+    margin-right: 20px;
+}
+#box .rectangle img:hover{
+    filter: none;
+    box-shadow: #717171 2px 2px 20px;
+    border-radius: 20%;
+    margin-right: 30px;
+}
+#box .rectangle .def{
+    display: block;
+}
+#box .rectangle .def p{
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+#box .rectangle .def h1{
+    font-size: 30px;
+    text-align: center;
+    color: #aaa;
+}
+
+/*----------------------------------------responsywnosc----------------------------------------*/
+
+/*navbar*/
+
+@media(max-width: 600px){
+    ul li a{
+        font-size: 20px;
+    }
+    ul li a:hover{
+        font-size: 25px;
+        
+    }
+}
+@media(max-width: 420px){
+    ul li a{
+        font-size: 15px;
+    }
+    ul li a:hover{
+        font-size: 20px;
+    }
+}
+
+/*wprowadzenie*/
+@media(max-width: 770px){
+    #first p{
+       line-height: 50px;
+    }
+}
+/*o zespole*/
+
+@media(max-width: 1600px){
+    #ozespole p{
+       line-height: 50px;
+    }
+}
+ /*albumy*/
+
+@media(min-width: 1380px) and (max-width: 1600px){
+    #box .rectangle .def p{
+        font-size: 17px;
+
+    }
+}
+@media(min-width: 871px) and (max-width: 1379px){
+    #box .rectangle .def p{
+        font-size: 13px;
+
+    }
+}
+@media(max-width: 870px){
+    #box{
+        height: 3450px;
+        padding-bottom: 50px;
+        display: block;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #box .rectangle{
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+        float: left;
+        background-color: #1e2126;
+        margin-bottom: 50px;
+    }
+    #box .rectangle img{
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    #box .rectangle img:hover{
+        filter: none;
+        box-shadow: #717171 2px 2px 20px;
+        border-radius: 20%;
+        padding-right: 0;
+    }
+    #box .rectangle .def{
+        display: block;
+        width: auto;
+        text-align: center;
+        float: left;
+    }
+    #box .rectangle .def p{
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        float: left;
+    }
+    #box .rectangle .def h1{
+        
+        font-size: 30px;
+        padding: 10px;
+        color: #aaa;
+        text-align: center;
+    }
+}
+
+/*muzyka*/
+
+@media(max-width: 1750px){
+    .container{
+        width: 20%;
+        line-height: 10px;
+        background-color: #1e2126;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+    .filar{
+        width: auto;
+        height: auto;
+        float: left;
+        border: none;
+        transition: .2s all ease-in-out;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .filar p{
+        line-height: 20px;
+        font-size: 1.5em;
+    }
+    .frames{
+        width: auto;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .frames iframe{
+        width: auto;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
